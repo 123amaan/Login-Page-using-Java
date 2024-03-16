@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - Login Page</title>
+</head>
+<body>
+
+<p1>User Name: <span th:text="${user.name}"> </span></p1>
+<br>
+
+<p1>User Email: <span th:text="${user.email}"> </span></p1>
+<br>
+<button type="submit" class="btn btn-black"><a href="" th:href="@{/logout}">Logout</a></button>
+
+</body>
+</html>
