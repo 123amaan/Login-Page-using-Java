@@ -56,7 +56,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
-}
+
 2. UserDetailsService Implementation
 The CustomUserDetailsService class loads user-specific data. It retrieves the user information from a database or in-memory store.
 
@@ -80,7 +80,7 @@ public class CustomUserDetailsService implements UserDetailsService {
             .map(role -> new SimpleGrantedAuthority("ROLE_" + role.getName()))
             .collect(Collectors.toList());
     }
-}
+
 3. Custom Login Page
 Create a custom login page using Thymeleaf or any other templating engine. The login.html file will be placed in the templates directory.
 
@@ -115,6 +115,7 @@ Create a custom login page using Thymeleaf or any other templating engine. The l
     </div>
 </body>
 </html>
+
 4. Testing
 You can write unit and integration tests to verify the authentication and authorization functionalities. Use the @SpringBootTest annotation to load the full application context and test the security configurations.
 
