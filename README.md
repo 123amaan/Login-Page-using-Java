@@ -119,11 +119,13 @@ Create a custom login page using Thymeleaf or any other templating engine. The l
 4. Testing
 You can write unit and integration tests to verify the authentication and authorization functionalities. Use the @SpringBootTest annotation to load the full application context and test the security configurations.
 
-@SpringBootTest
-public class AuthenticationTests {
 
-    @Test
-    public void contextLoads() {
-        // Add test cases for authentication and authorization
-    }
-}
+             @SpringBootTest   
+
+           public class AuthenticationTests {
+    
+          @Test
+         public void contextLoads() {
+          // Add test cases for authentication and authorization
+         }
+
