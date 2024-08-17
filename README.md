@@ -84,18 +84,18 @@ public class CustomUserDetailsService implements UserDetailsService {
 3. Custom Login Page
 Create a custom login page using Thymeleaf or any other templating engine. The login.html file will be placed in the templates directory.
 
-<!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <title>Login</title>
-</head>
-<body>
-    <h1>Login</h1>
-    <form th:action="@{/login}" method="post">
-        <div>
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" />
-        </div>
+        <!DOCTYPE html>
+        <html xmlns:th="http://www.thymeleaf.org">
+        <head>
+            <title>Login</title>
+        </head>
+        <body>
+        <h1>Login</h1>
+            <form th:action="@{/login}" method="post">
+                <div>
+                    <label for="username">Username</label>
+                        <input type="text" id="username" name="username" />
+                </div>
         <div>
             <label for="password">Password</label>
             <input type="password" id="password" name="password" />
@@ -106,26 +106,25 @@ Create a custom login page using Thymeleaf or any other templating engine. The l
         <div>
             <button type="submit">Login</button>
         </div>
-    </form>
-    <div th:if="${param.error}">
-        Invalid username or password.
-    </div>
-    <div th:if="${param.logout}">
-        You have been logged out.
-    </div>
-</body>
-</html>
+        </form>
+            <div th:if="${param.error}">
+                Invalid username or password.
+            </div>
+       <div th:if="${param.logout}">
+            You have been logged out.
+        </div>
+        </body>
+       </html>
 
 4. Testing
 You can write unit and integration tests to verify the authentication and authorization functionalities. Use the @SpringBootTest annotation to load the full application context and test the security configurations.
 
 
-             @SpringBootTest   
-
-           public class AuthenticationTests {
+       @SpringBootTest   
+       public class AuthenticationTests {
     
-          @Test
-         public void contextLoads() {
-          // Add test cases for authentication and authorization
-         }
+       @Test
+       public void contextLoads() {
+       // Add test cases for authentication and authorization
+       }
 
