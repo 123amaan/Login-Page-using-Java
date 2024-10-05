@@ -2,6 +2,7 @@ This project demonstrates how to implement authentication and authorization in a
 
 Below is a video demo to showcase the project : 
 
+https://github.com/user-attachments/assets/0b26aaf0-f46e-460c-a400-dd30718be620
 
 Features
 1. User Authentication: Validate user credentials against a database or an in-memory store.
