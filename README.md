@@ -1,5 +1,8 @@
 This project demonstrates how to implement authentication and authorization in a Spring Boot application using Java. The application includes a login page where users can authenticate themselves, and upon successful login, they are granted access to specific parts of the application based on their roles (authorization).
 
+Below is a video demo to showcase the project : 
+
+
 Features
 1. User Authentication: Validate user credentials against a database or an in-memory store.
 2. Role-Based Authorization: Grant or deny access to resources based on user roles.
